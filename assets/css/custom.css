@@ -1,5 +1,5 @@
 body {
-	
+
 }
 
 .navbar-right {
@@ -35,3 +35,12 @@ body {
   background: #e7e7e7;
 }
 
+.open-question {
+	border: green;
+	background-color: green;
+}
+
+.close-question {
+	border: red;
+	background-color: red;
+}

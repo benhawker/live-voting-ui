@@ -19,7 +19,8 @@
   	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
   	<script type="text/javascript" src="assets/js/jquery.sticky-kit.js"></script>
 
-
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="piechart.js"></script>
 
     <script>
   	 $("#popover").popover({ trigger: "hover" });
@@ -34,15 +35,15 @@
 <section class="space-50"> </section>
 
 <div class="container">
+
   <div class="col-sm-6">
-		<h2>Question 1 of 3:</h2>
-    <h1>Do you like bananas?</h1>
-    <form action="" class="question-form">
-      <input type="radio" name="answer" value="1"> Yes, they are great!<br>
-      <input type="radio" name="answer" value="2"> No, not sure about them <br>
-    </form>
-    <button type="submit" class="btn btn-fill btn-primary hundred-width">Submit Answer</button>
+    <h2>Question 1 of 3:</h2>
+    <h1>Results</h1>
+    <div class="question-form">
+			<div id="chart_div"></div>
+    </div>
   </div>
+
 </div>
 
 </body>
