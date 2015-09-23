@@ -16,8 +16,6 @@
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
   	<!-- js files -->
-  	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
-  	<script type="text/javascript" src="assets/js/jquery.sticky-kit.js"></script>
 
 
 </head>
@@ -28,11 +26,11 @@
 
 <div class="container question">
   <div class="col-sm-6">
-		<h2 id="question-title">Question 1 of 3:</h2>
-    <h1>Do you like bananas?</h1>
+		<h2>Question <span id="question-number">?</span> of 3:</h2>
+    <h1 id="question-title">Do you like bananas?</h1>
     <form action="" class="question-form">
       <input type="radio" name="answer" value="1"> Yes, they are great!<br>
-      <input type="radio" name="answer" value="2"> No, not sure about them <br>
+      <input type="radio" name="answer" value="2"> No, not sure about them<br>
     </form>
     <button type="submit" class="btn btn-fill btn-primary hundred-width">Submit Answer</button>
   </div>
@@ -56,4 +54,6 @@
   <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
   <script src="assets/js/app/app.js"></script>
 
+  	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+  	<script type="text/javascript" src="assets/js/jquery.sticky-kit.js"></script>
 </html>
