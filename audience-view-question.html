@@ -20,22 +20,15 @@
   	<script type="text/javascript" src="assets/js/jquery.sticky-kit.js"></script>
 
 
-
-    <script>
-  	 $("#popover").popover({ trigger: "hover" });
-  	 $("#fixit").stick_in_parent();
-  	</script>
-
-
 </head>
 
 <body>
 
 <section class="space-50"> </section>
 
-<div class="container">
+<div class="container question">
   <div class="col-sm-6">
-		<h2>Question 1 of 3:</h2>
+		<h2 id="question-title">Question 1 of 3:</h2>
     <h1>Do you like bananas?</h1>
     <form action="" class="question-form">
       <input type="radio" name="answer" value="1"> Yes, they are great!<br>
@@ -59,100 +52,8 @@
 	<script src="assets/js/bootstrap-select.js"></script>
 	<script src="assets/js/bootstrap-datepicker.js"></script>
 	<script src="assets/js/chartist.min.js"></script>
-    <script src="assets/js/jquery.tagsinput.js"></script>
+  <script src="assets/js/jquery.tagsinput.js"></script>
+  <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+  <script src="assets/js/app/app.js"></script>
 
-	<!-- GSDK Pro functions -->
-	<script src="assets/js/get-shit-done.js"></script>
-
-    <script type="text/javascript">
-        var big_image;
-        var transparent = true;
-
-        $().ready(function(){
-            responsive = $(window).width();
-
-            $(window).on('scroll', checkScroll);
-
-            if (responsive >= 768){
-                big_image = $('.parallax-image').find('img');
-
-                $(window).on('scroll',function(){
-                    parallax();
-                    checkScroll();
-                });
-            }
-
-        });
-
-       function checkScroll(){
-        	if($(document).scrollTop() > 260 ) {
-                if(transparent) {
-                    transparent = false;
-                    $('nav[role="navigation"]').removeClass('navbar-transparent').addClass('navbar-default');
-                }
-            } else {
-                if( !transparent ) {
-                    transparent = true;
-                    $('nav[role="navigation"]').addClass('navbar-transparent').removeClass('navbar-default');
-                }
-            }
-        }
-
-       var parallax = function() {
-            var current_scroll = $(this).scrollTop();
-
-            oVal = ($(window).scrollTop() / 3);
-            big_image.css('top',oVal);
-        };
-
-    </script>
-
-		<!-- GSDK Pro functions -->
-	<script src="assets/js/get-shit-done.js"></script>
-
-  <script type="text/javascript">
-
-    $(window).load(function() {
-        $("#flexiselDemo1").flexisel({
-            enableResponsiveBreakpoints: true,
-            responsiveBreakpoints: {
-                portrait: {
-                    changePoint:480,
-                    visibleItems: 1
-                },
-                landscape: {
-                    changePoint:640,
-                    visibleItems: 2
-                },
-                tablet: {
-                    changePoint:768,
-                    visibleItems: 3
-                }
-            }
-          });
-
-
-       $("#flexiselDemo2").flexisel({
-       enableResponsiveBreakpoints: true,
-       visibleItems: 6,
-            responsiveBreakpoints: {
-                portrait: {
-                    changePoint:480,
-                    visibleItems: 1
-                },
-                landscape: {
-                    changePoint:640,
-                    visibleItems: 2
-                },
-                tablet: {
-                    changePoint:768,
-                    visibleItems: 3
-                }
-            }
-    });
-   });
-
-
-   gsdk.initPopovers();
-  </script>
 </html>
